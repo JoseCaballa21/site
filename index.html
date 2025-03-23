@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio Personal</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/estudios.css">
+    <link rel="stylesheet" href="assets/css/contacto.css">
+    <link rel="stylesheet" href="assets/css/proyectos.css">
+    <link rel="stylesheet" href="assets/css/modal.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="js/app.js" defer></script>
+</head>
+<body>
+    <!-- Sección de Perfil -->
+    <section id="perfil" class="perfil">
+        <div class="perfil-contenedor">
+            <!-- Foto de Perfil -->
+            <div class="foto-perfil">
+                <img src="assets/img/fotoperfil.png" alt="Foto de Josemaria Caballa Garay">
+            </div>
+            <!-- Información Personal -->
+            <div class="info-perfil">
+                <h1>Josemaria Caballa Garay</h1>
+                <p>Estudiante de noveno ciclo en Ingeniería de Sistemas de la Universidad Nacional de Cañete, con habilidades en
+                    análisis y diseño de sistemas, gestión de proyectos y análisis de datos. Conocimientos en inteligencia artificial
+                    aplicada, diseño UX/UI y herramientas de inteligencia de negocios. Busco oportunidades para aplicar mis
+                    habilidades en proyectos tecnológicos innovadores y en la optimización de procesos empresariales.
+                </p>
+                <!-- Iconos de Redes Sociales -->
+                <div class="redes-sociales">
+                    <a href="https://www.linkedin.com/in/josecaballa/" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="http://wa.me/51976541722?text=%C2%A1Hola%21+Quiero+hablar+contigo+%F0%9F%98%8A" target="_blank">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                    <a href="https://github.com/JoseCaballa21" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Línea Divisoria -->
+    <div class="divisor"></div>
+
+    <!-- Sección de Botones -->
+    <section class="botones">
+        <button onclick="mostrarVentanaEstudios()">Estudios</button>
+        <button onclick="descargarCV()">Curriculum</button>
+        <button onclick="mostrarVentanaExperiencia()">Experiencia</button>
+        <button onclick="mostrarVentanaContacto()">Contáctame</button>
+    </section>
+
+    <!-- Ventana Emergente de Estudios -->
+    <div id="ventana-estudios" class="ventana">
+        <div class="ventana-contenido" onclick="event.stopPropagation();">
+            <span class="cerrar" onclick="cerrarVentanaEstudios()">&times;</span>
+            <h1>Educación</h1>
+            <ul class="timeline">
+                <li>
+                    <h3>Universidad Nacional de Cañete</h3>
+                    <span>Mayo 2021 — Diciembre 2025</span>
+                    <p>Noveno ciclo de la carrera profesional de Ingeniería de Sistemas.</p>
+                </li>
+                <li>
+                    <h3>FreeCodeCamp</h3>
+                    <span>Marzo, 2025</span>
+                    <p>Diseño web responsivo.</p>
+                </li>
+                <li>
+                    <h3>Programa de Iniciación Tecnológica PIT - UNI</h3>
+                    <span>Marzo, 2025</span>
+                    <p>Fundamentos de Gestión bajo el enfoque Scrum.</p>
+                </li>
+                <li>
+                    <h3>Udemy</h3>
+                    <span>Febrero, 2025</span>
+                    <p>Excel Básico, Intermedio y Avanzado.</p>
+                </li>
+                <li>
+                    <h3>Udemy</h3>
+                    <span>Febrero, 2025</span>
+                    <p>Power BI Transformación y limpieza de datos con Power Query.</p>
+                </li>
+                <li>
+                    <h3>Programa de Iniciación Tecnológica PIT - UNI</h3>
+                    <span>Septiembre, 2024</span>
+                    <p>Power BI Básico e Intermedio.</p>
+                </li>
+                <li>
+                    <h3>Programa de Iniciación Tecnológica PIT - UNI</h3>
+                    <span>Septiembre, 2024</span>
+                    <p>Programación en Python Básico e Intermedio.</p>
+                </li>
+                <li>
+                    <h3>Skill - Centro de Capacitación</h3>
+                    <span>Marzo, 2024</span>
+                    <p>Curso en computación y herramientas digitales.</p>
+                </li>
+                <li>
+                    <h3>Skill - Centro de Capacitación</h3>
+                    <span>Marzo, 2024</span>
+                    <p>Curso de actualización en Python.</p>
+                </li>
+                <li>
+                    <h3>Skill - Centro de Capacitación</h3>
+                    <span>Marzo, 2024</span>
+                    <p>SQL Server.</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Ventana Emergente de Experiencia -->
+<div id="ventana-experiencia" class="ventana">
+    <div class="ventana-contenido">
+        <span class="cerrar" onclick="cerrarVentanaExperiencia()">&times;</span>
+        <h1>Experiencia</h1>
+        <ul class="timeline">
+            <!-- Análisis de Datos -->
+            <li>
+                <h3>Análisis de Datos</h3>
+                <span>Marzo, 2025</span>
+                <p>Elaboración de dashboards interactivos en Power BI para el análisis de admisión de la Universidad Nacional Mayor de San Marcos (UNMSM) y la Universidad Nacional de Cañete (UNDC), con visualizaciones gráficas y filtros personalizados.</p>
+            </li>
+
+            <!-- Diseño y Publicidad -->
+            <li>
+                <h3>Diseño y Publicidad</h3>
+                <span>Noviembre, 2024</span>
+                <p>Ganador del concurso de diseño de logo para la Facultad de Ingeniería en la UNDC.</p>
+                <br>
+                <span>Diciembre, 2024</span>
+                <p>Análisis y diseño de un sistema de ventas para la tienda de ropa "Jezer" en Imperial, Cañete.</p>
+                <br>
+                <span>Diciembre, 2024</span>
+                <p>Diseño de folletos publicitarios para el examen de admisión de la UNDC.</p>
+            </li>
+
+            <!-- Responsabilidad Social y Capacitación -->
+            <li>
+                <h3>Responsabilidad Social y Capacitación</h3>
+                <span>Julio, 2024</span>
+                <p>Proyecto RSU: Capacitación y desarrollo de página web para una veterinaria en Quilmaná.</p>
+                <br>
+                <span>Junio, 2024</span>
+                <p>Participación en el programa “Impulsando Talento con Valores” de la Asociación Ferreycorp.</p>
+            </li>
+
+            <!-- Gestión de Proyectos y Emprendimiento -->
+            <li>
+                <h3>Gestión de Proyectos y Emprendimiento</h3>
+                <span>Diciembre, 2024</span>
+                <p>Simulación de gestión de proyecto: Asistente Virtual para el Monitoreo del Bienestar Saludable “SaludAI”.</p>
+                <br>
+                <span>Julio, 2023</span>
+                <p>Participación en propuesta de negocio "Terrasoft" del curso de Administración.</p>
+            </li>
+
+            <!-- Desarrollo de Software y Sistemas -->
+            <li>
+                <h3>Desarrollo de Software y Sistemas</h3>
+                <span>Julio, 2023</span>
+                <p>Participación en software de costos con Java - POO para la empresa Reymel SAC en Quilmaná, Cañete.</p>
+                <br>
+                <span>Julio, 2023</span>
+                <p>Participación en el análisis de propuesta de un sistema de tesorería y registro de documentos para el IESTP Cañete.</p>
+            </li>
+        </ul>
+    </div>
+</div>
+
+    <!-- Ventana Emergente de Contáctame -->
+    <div id="ventana-contacto" class="ventana">
+        <div class="ventana-contenido">
+            <span class="cerrar" onclick="cerrarVentanaContacto()">&times;</span>
+            <h1>Contáctame</h1>
+            <!-- Mapa de ubicación -->
+            <div class="mapa">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7843.6160645164155!2d-76.3845877956465!3d-13.074793970097572!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1ses-419!2spe!4v1742692833306!5m2!1ses-419!2spe" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <!-- Datos de contacto -->
+            <div class="datos-contacto">
+                <h2>Datos Generales De Contacto</h2>
+                <p>Correo Electrónico 📧: <a href="mailto:josecaballa.01@gmail.com">josecaballa.01@gmail.com</a></p>
+                <p>Celular 📱: <a href="http://wa.me/51976541722?text=%C2%A1Hola%21+Quiero+hablar+contigo+%F0%9F%98%8A" target="_blank">+51 976-541-722</a></p>
+                <p>Facebook 📱: <a href="https://www.facebook.com/josemaria.caballagaray.9" target="_blank">Josemaria Caballa Garay</a></p>
+                <p>Instagram 📱: <a href="https://www.instagram.com/josecaballa21/" target="_blank">josecaballa21</a></p>
+                <p>¡Estoy a un mensaje de distancia! 💬 No dudes en contactarme para cualquier consulta o proyecto que tengas.</p>
+            </div>
+        </div>              
+    </div>
+
+    <!-- Línea Divisoria -->
+    <div class="divisor"></div>
+
+    <!-- Sección de Proyectos -->
+    <h1 class="titulo_proyecto">Proyectos</h1>
+    <section class="proyectos">
+        <button onclick="mostrarProyectos('web')">Desarrollo Web</button>
+        <button onclick="mostrarProyectos('analisis')">Análisis de Datos</button>
+        <button onclick="mostrarProyectos('diseño')">Diseño UX/UI</button>
+    </section>
+
+    <!-- Contenedor para los proyectos -->
+    <div id="contenedor-proyectos" class="contenedor-proyectos"></div>
+
+    <!-- MODALES "PROYECTOS" -->
+    <!-- Desarrollo web 1 -->
+    <div id="web1" class="modal">
+        <div class="modal-contenido">
+            <span class="cerrar" onclick="cerrarModal('web1')">&times;</span>
+            <video width="100%" height="300" controls>
+                <source src="assets/videos/proyecto1.mp4" type="video/mp4">
+                Tu navegador no soporta el video.
+            </video>
+            <h3>PORTAFOLIO WEB</h3>
+            <p>Sitio web diseñado para presentar mis proyectos, habilidades y experiencia de 
+                manera clara y profesional. La interfaz es moderna, atractiva y completamente 
+                responsiva, garantizando una experiencia de usuario óptima en cualquier dispositivo. 
+                Además, cuenta con secciones interactivas que permiten explorar mis estudios, 
+                experiencia y proyectos.</p>
+            <p class="tecnologias">#HTML #CSS #JavaScript</p>
+        </div>
+    </div>  
+    <!-- Desarrollo web 2 -->
+    <div id="web2" class="modal">
+        <div class="modal-contenido">
+            <span class="cerrar" onclick="cerrarModal('web2')">&times;</span>
+            <video width="100%" height="300" controls>
+                <source src="assets/videos/proyecto1.mp4" type="video/mp4">
+                Tu navegador no soporta el video.
+            </video>
+            <h3>Proyecto Web 2</h3>
+            <p>Este proyecto consiste en el desarrollo de un sitio web responsivo utilizando HTML, CSS y JavaScript.</p>
+            <p class="tecnologias">#HTML #CSS #JavaScript</p>
+        </div>
+    </div>
+    <!-- Desarrollo web 3 -->
+    <div id="web3" class="modal">
+        <div class="modal-contenido">
+            <span class="cerrar" onclick="cerrarModal('web3')">&times;</span>
+            <video width="100%" height="300" controls>
+                <source src="assets/videos/proyecto1.mp4" type="video/mp4">
+                Tu navegador no soporta el video.
+            </video>
+            <h3>Proyecto Web 3</h3>
+            <p>Este proyecto consiste en el desarrollo de un sitio web responsivo utilizando HTML, CSS y JavaScript.</p>
+            <p class="tecnologias">#HTML #CSS #JavaScript</p>
+        </div>
+    </div>
+        <!-- Desarrollo web 4 -->
+    <div id="web4" class="modal">
+        <div class="modal-contenido">
+            <span class="cerrar" onclick="cerrarModal('web4')">&times;</span>
+            <video width="100%" height="300" controls>
+                <source src="assets/videos/proyecto1.mp4" type="video/mp4">
+                Tu navegador no soporta el video.
+            </video>
+            <h3>Proyecto Web 4</h3>
+            <p>Este proyecto consiste en el desarrollo de un sitio web responsivo utilizando HTML, CSS y JavaScript.</p>
+            <p class="tecnologias">#HTML #CSS #JavaScript</p>
+        </div>
+    </div>
+    <!-- Desarrollo web 5 -->
+    <div id="web5" class="modal">
+        <div class="modal-contenido">
+            <span class="cerrar" onclick="cerrarModal('web5')">&times;</span>
+            <video width="100%" height="300" controls>
+                <source src="assets/videos/proyecto1.mp4" type="video/mp4">
+                Tu navegador no soporta el video.
+            </video>
+            <h3>Proyecto Web 5</h3>
+            <p>Este proyecto consiste en el desarrollo de un sitio web responsivo utilizando HTML, CSS y JavaScript.</p>
+            <p class="tecnologias">#HTML #CSS #JavaScript</p>
+        </div>
+    </div>
+    <!-- Desarrollo web 6 -->
+    <div id="web6" class="modal">
+        <div class="modal-contenido">
+            <span class="cerrar" onclick="cerrarModal('web6')">&times;</span>
+            <video width="100%" height="300" controls>
+                <source src="assets/videos/proyecto1.mp4" type="video/mp4">
+                Tu navegador no soporta el video.
+            </video>
+            <h3>Proyecto Web 6</h3>
+            <p>Este proyecto consiste en el desarrollo de un sitio web responsivo utilizando HTML, CSS y JavaScript.</p>
+            <p class="tecnologias">#HTML #CSS #JavaScript</p>
+        </div>
+    </div>
+
+    <!-- Analisis de datos 1 -->
+    <div id="analisis1" class="modal">
+        <div class="modal-contenido">
+            <span class="cerrar" onclick="cerrarModal('analisis1')">&times;</span>
+            <video width="100%" height="300" controls>
+                <source src="assets/videos/analisis1.mp4" type="video/mp4">
+                Tu navegador no soporta el video.
+            </video>
+            <h3>EXAMEN DE ADMISIÓN 2025-II UNMSM</h3>
+            <p>Desarrollé un dashboard interactivo en Power BI para analizar los resultados del examen de
+                admisión de la Universidad Nacional Mayor de San Marcos (UNMSM). El proyecto incluyó la extracción
+                y limpieza de datos desde archivos PDF no editables, transformando la información en tablas utilizables.
+                Se implementaron visualizaciones dinámicas para presentar estadísticas clave, como el total
+                de ingresantes por carrera, puntajes promedio y gráficos comparativos entre diferentes facultades.
+                Además, se añadieron filtros personalizados para segmentar los resultados según condición de ingreso
+                y carrera, permitiendo un análisis preciso y detallado.</p>
+            <p class="tecnologias">#Pandas #Python #PowerQuery #ETL #DAX #PowerBI</p>
+        </div>
+    </div>
+    <!-- Analisis de datos 2 -->
+    <div id="analisis2" class="modal">
+        <div class="modal-contenido">
+            <span class="cerrar" onclick="cerrarModal('analisis2')">&times;</span>
+            <video width="100%" height="300" controls>
+                <source src="assets/videos/analisis2.mp4" type="video/mp4">
+                Tu navegador no soporta el video.
+            </video>
+            <h3>EXAMEN DE ADMISIÓN UNDC</h3>
+            <p>Desarrollé un dashboard interactivo en Power BI para analizar los resultados del examen
+                de admisión de la Universidad Nacional de Cañete (UNDC). El proyecto consistió en la carga 
+                de datos desde archivos PDF utilizando herramientas de extracción, seguida de su procesamiento y 
+                limpieza en Excel. Implementé medidas DAX para calcular indicadores clave, como el 
+                total de postulantes e ingresantes, y segmenté los resultados por condición de ingreso y carrera. 
+                El resultado final fue un tablero visual que permite monitorear el rendimiento de los postulantes 
+                y obtener información clara y precisa sobre el proceso de admisión.</p>
+            <p class="tecnologias">#Excel #PowerQuery #ETL #DAX #PowerBI</p>
+        </div>
+    </div>
+    <!-- Analisis de datos 3 -->
+    <div id="analisis3" class="modal">
+        <div class="modal-contenido">
+            <span class="cerrar" onclick="cerrarModal('analisis3')">&times;</span>
+            <video width="100%" height="300" controls>
+                <source src="assets/videos/proyecto1.mp4" type="video/mp4">
+                Tu navegador no soporta el video.
+            </video>
+            <h3>Analisis de datos 3</h3>
+            <p>Este proyecto consiste en el desarrollo de un sitio web responsivo utilizando HTML, CSS y JavaScript.</p>
+            <p class="tecnologias">#HTML #CSS #JavaScript</p>
+        </div>
+    </div>
+    <!-- Analisis de datos 4 -->
+    <div id="analisis4" class="modal">
+        <div class="modal-contenido">
+            <span class="cerrar" onclick="cerrarModal('analisis4')">&times;</span>
+            <video width="100%" height="300" controls>
+                <source src="assets/videos/proyecto1.mp4" type="video/mp4">
+                Tu navegador no soporta el video.
+            </video>
+            <h3>Analisis de datos 4</h3>
+            <p>Este proyecto consiste en el desarrollo de un sitio web responsivo utilizando HTML, CSS y JavaScript.</p>
+            <p class="tecnologias">#HTML #CSS #JavaScript</p>
+        </div>
+    </div>
+    <!-- Analisis de datos 5 -->
+    <div id="analisis5" class="modal">
+        <div class="modal-contenido">
+            <span class="cerrar" onclick="cerrarModal('analisis5')">&times;</span>
+            <video width="100%" height="300" controls>
+                <source src="assets/videos/proyecto1.mp4" type="video/mp4">
+                Tu navegador no soporta el video.
+            </video>
+            <h3>Analisis de datos 5</h3>
+            <p>Este proyecto consiste en el desarrollo de un sitio web responsivo utilizando HTML, CSS y JavaScript.</p>
+            <p class="tecnologias">#HTML #CSS #JavaScript</p>
+        </div>
+    </div>
+    <!-- Analisis de datos 6 -->
+    <div id="analisis6" class="modal">
+        <div class="modal-contenido">
+            <span class="cerrar" onclick="cerrarModal('analisis6')">&times;</span>
+            <video width="100%" height="300" controls>
+                <source src="assets/videos/proyecto1.mp4" type="video/mp4">
+                Tu navegador no soporta el video.
+            </video>
+            <h3>Analisis de datos 6</h3>
+            <p>Este proyecto consiste en el desarrollo de un sitio web responsivo utilizando HTML, CSS y JavaScript.</p>
+            <p class="tecnologias">#HTML #CSS #JavaScript</p>
+        </div>
+    </div>
+
+    <!-- Diseño UX/UI 1 -->
+    <div id="diseño1" class="modal">
+        <div class="modal-contenido">
+            <span class="cerrar" onclick="cerrarModal('diseño1')">&times;</span>
+            <video width="100%" height="300" controls>
+                <source src="assets/videos/proyecto1.mp4" type="video/mp4">
+                Tu navegador no soporta el video.
+            </video>
+            <h3>DISEÑO DE SISTEMA DE VENTA DE ROPA</h3>
+            <p>Desarrollé una interfaz moderna y funcional para el sistema de venta de ropa "Jezer" 
+                utilizando Figma. El diseño se centra en una experiencia de usuario intuitiva, con un 
+                catálogo dinámico, carrito de compras accesible y panel administrativo eficiente, todo 
+                adaptado para dispositivos móviles y de escritorio.</p>
+            <p class="tecnologias">#Miro #Figma</p>
+        </div>
+    </div>
+    <!-- Diseño UX/UI 2 -->
+    <div id="diseño2" class="modal">
+        <div class="modal-contenido">
+            <span class="cerrar" onclick="cerrarModal('diseño2')">&times;</span>
+            <video width="100%" height="300" controls>
+                <source src="assets/videos/proyecto1.mp4" type="video/mp4">
+                Tu navegador no soporta el video.
+            </video>
+            <h3>Diseño ux/ui 2</h3>
+            <p>Este proyecto consiste en el desarrollo de un sitio web responsivo utilizando HTML, CSS y JavaScript.</p>
+            <p class="tecnologias">#HTML #CSS #JavaScript</p>
+        </div>
+    </div>
+    <!-- Diseño UX/UI 3 -->
+    <div id="diseño3" class="modal">
+        <div class="modal-contenido">
+            <span class="cerrar" onclick="cerrarModal('diseño3')">&times;</span>
+            <video width="100%" height="300" controls>
+                <source src="assets/videos/proyecto1.mp4" type="video/mp4">
+                Tu navegador no soporta el video.
+            </video>
+            <h3>Diseño ux/ui 3</h3>
+            <p>Este proyecto consiste en el desarrollo de un sitio web responsivo utilizando HTML, CSS y JavaScript.</p>
+            <p class="tecnologias">#HTML #CSS #JavaScript</p>
+        </div>
+    </div>
+    <!-- Diseño UX/UI 4 -->
+    <div id="diseño4" class="modal">
+        <div class="modal-contenido">
+            <span class="cerrar" onclick="cerrarModal('diseño4')">&times;</span>
+            <video width="100%" height="300" controls>
+                <source src="assets/videos/proyecto1.mp4" type="video/mp4">
+                Tu navegador no soporta el video.
+            </video>
+            <h3>Diseño ux/ui 4</h3>
+            <p>Este proyecto consiste en el desarrollo de un sitio web responsivo utilizando HTML, CSS y JavaScript.</p>
+            <p class="tecnologias">#HTML #CSS #JavaScript</p>
+        </div>
+    </div>
+    <!-- Diseño UX/UI 5 -->
+    <div id="diseño5" class="modal">
+        <div class="modal-contenido">
+            <span class="cerrar" onclick="cerrarModal('diseño5')">&times;</span>
+            <video width="100%" height="300" controls>
+                <source src="assets/videos/proyecto1.mp4" type="video/mp4">
+                Tu navegador no soporta el video.
+            </video>
+            <h3>Diseño ux/ui 5</h3>
+            <p>Este proyecto consiste en el desarrollo de un sitio web responsivo utilizando HTML, CSS y JavaScript.</p>
+            <p class="tecnologias">#HTML #CSS #JavaScript</p>
+        </div>
+    </div>
+    <!-- Diseño UX/UI 6 -->
+    <div id="diseño6" class="modal">
+        <div class="modal-contenido">
+            <span class="cerrar" onclick="cerrarModal('diseño6')">&times;</span>
+            <video width="100%" height="300" controls>
+                <source src="assets/videos/proyecto1.mp4" type="video/mp4">
+                Tu navegador no soporta el video.
+            </video>
+            <h3>Diseño ux/ui 6</h3>
+            <p>Este proyecto consiste en el desarrollo de un sitio web responsivo utilizando HTML, CSS y JavaScript.</p>
+            <p class="tecnologias">#HTML #CSS #JavaScript</p>
+        </div>
+    </div>
+
+    <script src="scripts/app.js"></script>
+</body>
+</html>
